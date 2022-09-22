@@ -1,0 +1,96 @@
+{
+  "created": "2021-10-21T18:17:35.7917975+02:00",
+  "datafrom": "2021-10-20T00:00:00",
+  "datato": "2021-10-21T18:16:13.25",
+  "hotel": {
+    "name": "HotelTime Hotel",
+    "id": "1.1100000001"
+  },
+  "datatype": "Modified",
+  "complexrate": 25.495,
+  "bookings": [
+    {
+      "id": "1.1200110915",
+      "created": "2021-08-01T03:51:36.4757887+02:00",
+      "currency": "EUR",
+      "totalPrice": 360.0,
+      "totalPaid": 0.0,
+      "chmPrePaymentRaw": "",
+      "originid": "BOOKING-123",
+      "chmid": "D-EDGE32",
+      "segment": "OTA",
+      "clienttype": "",
+      "source": "Ulice",
+      "provider": "HotelTime Hotel",
+      "kioskapikey": null,
+      "accountcentres": null,
+      "isblock": false,
+      "modifyon": "2021-10-21T11:19:20.493",
+      "nationalityIso3": "CZE",
+      "owner": {
+        "citizen": {
+          "id": 1200110485,
+          "firstname": "Annie",
+          "surname": "Test",
+          "email": "",
+          "gsm": "",
+          "language": "cs-cz",
+          "gender": "Female",
+          "gdpr": {
+            "repetitivestay": false,
+            "marketing": false
+          }
+        }
+      },
+      "rooms": [
+        {
+          "avgnightprice": 45.0,
+          "state": "Opce",
+          "ratecode": "DNS",
+          "ages": [
+            {
+              "idage": 0,
+              "amount": 1
+            }
+          ],
+          "restype": "Room",
+          "created": "2021-08-01T03:51:36.4757887+02:00",
+          "idstay": 1200110916,
+          "arrival": "2016-06-27",
+          "departure": "2016-07-05",
+          "roomtype": "Standard",
+          "roomcode": "104",
+          "pax": 1,
+          "guests": [
+            {
+              "id": 1200049269,
+              "firstname": "Michaela",
+              "surname": "Lhotáková",
+              "email": "",
+              "gsm": "",
+              "language": "en-gb",
+              "gender": "Female",
+              "gdpr": {
+                "repetitivestay": false,
+                "marketing": false
+              }
+            },
+            {
+              "id": 1200049269,
+              "firstname": "Michaela",
+              "surname": "Lhotáková",
+              "email": "",
+              "gsm": "",
+              "language": "en-gb",
+              "gender": "Female",
+              "gdpr": {
+                "repetitivestay": false,
+                "marketing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

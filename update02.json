@@ -1,0 +1,120 @@
+{
+  "datatype": "Updated",
+  "created": "2021-08-04T03:56:03.0393437+02:00",
+  "datafrom": "2021-08-03",
+  "datato": "2021-08-04",
+  "hotel": {
+    "name": "HotelTime Hotel",
+    "id": "1.1100000001"
+  },
+  "bookings": [
+    {
+      "id": "1.1200208894",
+      "created": "2021-08-01T03:51:36.4757887+02:00",
+      "currency": "CZK",
+      "totalPrice": 1300.0,
+      "totalPaid": 0.0,
+      "chmPrePaymentRaw": "",
+      "originid": "",
+      "segment": "",
+      "clienttype": "",
+      "source": "",
+      "provider": "",
+      "kioskapikey": "424576c7-ae84-414a-8333-7fbb7ff7386b",
+      "isblock": false,
+      "nationalityIso3": "CZE",
+      "accountcentres": [
+        {
+          "id": 1100192692,
+          "name": "Městský poplatek",
+          "idsystemtype": 4,
+          "currency": "CZK",
+          "totalPrice": 19.6,
+          "totalVat": 0.0,
+          "totalVatBase": 19.6
+        },
+        {
+          "id": 1100192706,
+          "name": "Ubytování",
+          "idsystemtype": 1,
+          "currency": "CZK",
+          "totalPrice": 980.4,
+          "totalVat": 127.87826,
+          "totalVatBase": 852.52174
+        },
+        {
+          "id": 1100224655,
+          "name": "Bez stravování",
+          "idsystemtype": 2,
+          "currency": "CZK",
+          "totalPrice": 0.0,
+          "totalVat": 0.0,
+          "totalVatBase": 0.0
+        },
+        {
+          "id": 1200107124,
+          "name": "Stravování",
+          "idsystemtype": 2,
+          "currency": "CZK",
+          "totalPrice": 300.0,
+          "totalVat": 52.066116,
+          "totalVatBase": 247.933884
+        }
+      ],
+      "owner": {
+        "company": {
+          "id": 1200138015,
+          "name": "Jan Pravda firma",
+          "ic": "",
+          "email": "jan.pravda@hoteltime.com",
+          "gsm": "",
+          "language": "cs-cz"
+        }
+      },
+      "rooms": [
+        {
+          "avgnightprice": 500.0,
+          "state": "Confirmed",
+          "ratecode": "JP",
+          "ages": [
+            {
+              "idage": 0,
+              "amount": 1
+            }
+          ],
+          "idstay": 1200208899,
+          "arrival": "2021-08-03",
+          "departure": "2021-08-04",
+          "roomtype": "KING",
+          "roomcode": "K6048",
+          "pax": 1,
+          "restype": "Room",
+          "created": "2021-08-01T03:51:36.4757887+02:00"
+        },
+        {
+          "avgnightprice": 800.0,
+          "state": "Confirmed",
+          "ratecode": "JP",
+          "ages": [
+            {
+              "idage": 0,
+              "amount": 1
+            },
+            {
+              "idage": 1,
+              "amount": 1
+            }
+          ],
+          "idstay": 1200208895,
+          "arrival": "2021-08-03",
+          "departure": "2021-08-04",
+          "roomtype": "KING",
+          "roomcode": "K6047",
+          "pax": 2,
+          "restype": "Room",
+          "created": "2021-08-01T03:51:36.4757887+02:00"
+        }
+      ]
+    }
+  ]
+}

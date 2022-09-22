@@ -1,0 +1,47 @@
+{
+  "created": "2021-10-21T18:17:35.7917975+02:00",
+  "datafrom": "2021-10-20T00:00:00",
+  "datato": "2021-10-21T18:16:13.25",
+  "hotel": {
+    "name": "HotelTime Hotel",
+    "id": "1.1100000001"
+  },
+  "datatype": "Modified",
+  "complexrate": 25.495,
+  "bookings": [
+    {
+      "id": "1.1200110915",
+      "created": "2021-08-01T03:51:36.4757887+02:00",
+      "currency": "EUR",
+      "totalPrice": 0.0,
+      "totalPaid": 0.0,
+      "chmPrePaymentRaw": "",
+      "originid": "BOOKING-123",
+      "chmid": "D-EDGE32",
+      "segment": "OTA",
+      "clienttype": "",
+      "source": "Ulice",
+      "provider": "HotelTime Hotel",
+      "kioskapikey": null,
+      "accountcentres": null,
+      "isblock": false,
+      "modifyon": "2021-10-21T11:19:20.493",
+      "nationalityIso3": "CZE",
+      "owner": {
+        "citizen": {
+          "id": 1200110485,
+          "firstname": "Annie",
+          "surname": "Test",
+          "email": "",
+          "gsm": "",
+          "language": "cs-cz",
+          "gender": "Female",
+          "gdpr": {
+            "repetitivestay": false,
+            "marketing": false
+          }
+        }
+      }
+    }
+  ]
+}

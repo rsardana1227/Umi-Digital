@@ -1,0 +1,108 @@
+{
+  "created": "2018-04-25 05:00:00Z0",
+  "dataType": "postcheckin",
+  "hotel": {
+    "id": "23.11113882",
+    "name": "Imperial Prague"
+  },
+  "bookings": [
+    {
+      "id": "23.110000001",
+      "created": "2021-08-01T03:51:36.4757887+02:00",
+      "isblock": false,
+      "nationalityIso3": "CZE",
+      "owner": {
+        "company": {
+          "name": "O2",
+          "ic": "231 32 122",
+          "email": "no-reply@o2.com",
+          "gsm": "+420775147887",
+          "language": "ru-ru"
+        },
+        "citizen": null
+      },
+      "rooms": [
+        {
+          "arrival": "2018-04-23",
+          "departure": "2018-04-24",
+          "roomType": "DBL",
+          "pax": 2,
+          "ages": [
+            {
+              "idage": 0,
+              "amount": 2
+            }
+          ],
+          "guests": [
+            {
+              "firstname": "Radim",
+              "surname": "Kellner",
+              "email": "never-reply@o2.com",
+              "gsm": null,
+              "langugage": "cs-cz",
+              "gender": "male",
+              "gdpr": "consent_bitmask"
+            },
+            {
+              "firstname": "Radka",
+              "surname": "Kellnerova",
+              "email": "never-ever-reply@o2.com",
+              "gsm": "0044035144787",
+              "langugage": "cs-cz",
+              "gender": "female",
+              "gdpr": "consent_bitmask"
+            }
+          ],
+          "restype": "Room",
+          "created": "2021-08-01T03:51:36.4757887+02:00"
+        }
+      ]
+    },
+    {
+      "id": "23.110000002",
+      "created": "2021-08-01T03:51:36.4757887+02:00",
+      "isblock": false,
+      "owner": {
+        "company": null,
+        "citizen": {
+          "firstname": "Frantisek",
+          "surname": "Krizik",
+          "email": "frantisek.krizik@gmail.com",
+          "gsm": "724851447",
+          "language": "cs-cz"
+        }
+      },
+      "rooms": [
+        {
+          "arrival": "2018-04-23",
+          "departure": "2018-04-24",
+          "roomType": "APT",
+          "pax": 3,
+          "ages": [
+            {
+              "idage": 0,
+              "amount": 2
+            },
+            {
+              "idage": 1,
+              "amount": 1
+            }
+          ],
+          "guests": [
+            {
+              "firstname": "Frantisek",
+              "surname": "Krizik",
+              "email": "frantisek.krizik@gmail.com",
+              "gsm": "724851447",
+              "langugage": "cs-cz",
+              "gender": "male",
+              "gdpr": "consent_bitmask"
+            }
+          ],
+          "restype": "Room",
+          "created": "2021-08-01T03:51:36.4757887+02:00"
+        }
+      ]
+    }
+  ]
+}

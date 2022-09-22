@@ -1,0 +1,112 @@
+{
+  "datatype": "typ datoveho baliku [Created|Arrival|PostCheckin|Departure|Updated|Cancelled]",
+  "created": "datum a cas kdy byla davka vytvorena",
+  "datafrom": "datum dat v davce od (vcetne)",
+  "datato": "datum dat v davce do (otevreny interval)",
+  "hotel": {
+    "description": "hlavicka hotelu za ktery jsou data generovana",
+    "name": "nazev",
+    "id": "interni cluster ID, format [node].[id hotel]"
+  },
+  "complexrate": "aktualně platný kurz hotelu do doplňkové měny",
+  "bookings": [
+    {
+      "description": "hlavicka jedne rezervace, muze obsahovat 1..n pokoju",
+      "id": "interni cluster ID, format [node].[id rezervace]",
+      "currency": "ISO kod meny",
+      "totalPrice": "cena k zaplaceni celkem - nevyuctovane polozky vsech uctu rezervace",
+      "totalPaid": "jiz uhrazena cast rezervace - vystaven danovy doklad",
+      "chmPrePaymentRaw": "raw data z CHM o provedene predplatbe v OTA",
+      "originid": "ID rezervace zdrojoveho systemu, napriklad Booking.com",
+      "chmid": "ID rezervace channel manager",
+      "segment": "nazev segmentu rezervace",
+      "clienttype": "nazev typu klientely rezervazce",
+      "source": "nazev zdroje rezervace",
+      "provider": "nazev poskytovatele rezervace",
+      "kioskapikey": "token pro pristup k rezervaci pres KioskAPI",
+      "isblock": "true | false - jestli je cela rezervace jako block, tedy zatim bez ulozene ceny, totalPrice je pak 0",
+      "modifyon": "timestamp poslední modifikace v časové zóně hotelu, pripadne cas storna",
+      "nationalityIso3": "ISO3 kod narodnosti rezervace (dle hlavicky)",
+      "created": "datum a cas v TZ serveru kdy byla rezervace vytvorena (neni cas vytvoreni v OTA)",
+      "accountcentres": [
+        {
+          "description": "data jednoho statistickeho strediska z polozek vsech uctu rezervace vcetne package elementu, extrasu, ... Polozky jsou obsazeny bez ohledu na to jestli jiz byly vyuctovany ci nikoliv",
+          "id": "ID rastru",
+          "name": "nazev rastru",
+          "idsystemtype": "systemovy typ rastr [1 = Ubytovani, 2 = Strava, 3 = Poplatek, 4 = Custom]",
+          "currency": "kod meny vykonu, muze se lisit od meny rezervace v pripade ze je ucet bydliciho veden v jine mene",
+          "totalPrice": "cena celkem vcetne DPH, max 6 desetinnych mist",
+          "totalVat": "celkova vyse DPH, max 6 desetinnych mist",
+          "totalVatBase": "zaklad DPH, max 6 desetinnych mist"
+        }
+      ],
+      "owner": {
+        "description": "vlastnik rezervace, muze byt bud company nebo citizen",
+        "company": {
+          "description": "firma",
+          "id": "id adresare, cluster node je stejna jako pro id rezervace",
+          "name": "nazev",
+          "ic": "IC",
+          "email": "email",
+          "gsm": "mobilni telefon",
+          "language": "ISO format jazyka pro komunikaci, napr. cs-cz"
+        },
+        "citizen": {
+          "description": "osoba",
+          "id": "id adresare, cluster node je stejna jako pro id rezervace",
+          "firstname": "jmeno",
+          "surname": "prijmeni",
+          "email": "email",
+          "gsm": "mobilni telefon",
+          "language": "ISO format jazyka pro komunikaci, napr. cs-cz",
+          "gender": "pohlavi [male | female]",
+          "gdpr": {
+            "description": "udelene souhlasy GDPR, pokud element nize chybi je false",
+            "repetitivestay": "uchovani pro opakovany pobyt [true | false]",
+            "marketing": "uchovani pro marketingove udaje [true | false]"
+          }
+        }
+      },
+      "rooms": [
+        {
+          "description": "jeden rezervovany pokoj nebo fragment pobytu hosta - stehovani, zmena behem pobytu, atd. Pozor davka smazanych rezervaci obsahuje pouze smazane pokoje, nutne to tedy neznamena ze se smazala cela rezervace",
+          "idstay": "unikatni ID identifikujici pobyt hosta, v pripade ze dojde ke zmene v prubehu pobytu, editace | stehovani apod. existuje vice elementu room se stejnym idstay (zde zmineny fragment)",
+          "arrival": "datum prijezdu, nebo zacatku fragmentu pobytu",
+          "departure": "datum odjezdu, nebo konce fragmentu pobytu",
+          "roomtype": "kod rezervovaneho typu pokoje",
+          "roomcode": "kod prirazeneho pokoje, pokud pokoj neni prirazen je zde null | emptry string",
+          "avgnightprice": "prumerna cena za noc obsahujici data pri vytvoreni rezervace, vcetne package elementu, nebosahuje extra manualni postingy na ucty, pripadne manualni zmeny ceny polozek uctu a package elementu",
+          "state": "stav rezervace pokoje nebo fragmentu, [Opce | Confirmed | CheckedIn | CheckedOut], stav pro davku smazanych rezervaci pouze stav Canceled",
+          "ratecode": "nazev RateCode na ktery byla rezervace pokoje vytvorena",
+          "pax": "celkovy rezervovany pocet osob vsech vekovych skupin",
+          "ages": [
+            {
+              "description": "rozpad pax na vekove skupiny",
+              "idage": "id vekove kategorie, 0 = systemovy dospely, 1..5 uzivatelsky definovane kategorie per hotel",
+              "amount": "pocet osob"
+            }
+          ],
+          "guests": [
+            {
+              "description": "data zadaneho hosta. Tato pole jsou dostupna dle nastaveni exportu pro PostCheckin a Departure davky. Pocet zadanych hostu nemusi odpovidat poctu rezervovanych osob - zalezi na nastaveni hotelu",
+              "id": "id adresare, cluster node je stejna jako pro id rezervace",
+              "firstname": "jmeno",
+              "surname": "prijmeni",
+              "email": "email",
+              "gsm": "mobilni telefon",
+              "language": "ISO format jazyka pro komunikaci, napr. cs-cz",
+              "gender": "pohlavi [male | female]",
+              "gdpr": {
+                "description": "udelene souhlasy GDPR, pokud element nize chybi je false",
+                "repetitivestay": "uchovani pro opakovany pobyt [true | false]",
+                "marketing": "uchovani pro marketingove udaje [true | false]"
+              }
+            }
+          ],
+          "restype": "typ rezervace pokoje [Room | Accompany | DayUse | Block], v pripade DayUse je treba se ridit pouze datem 'arrival'",
+          "created": "datum a cas v TZ serveru kdy byla rezervace pokoje vytvorena (neni cas vytvoreni v OTA), v pripade editace rezervace kdy dojde k nahrazeni puvodni novou (interni systemove duvody) je to cas vytvoreni nove polozky"
+        }
+      ]
+    }
+  ]
+}

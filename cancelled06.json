@@ -1,0 +1,75 @@
+{
+  "datatype": "Cancelled",
+  "created": "2021-08-05T03:08:38.7366856+02:00",
+  "datafrom": "2021-08-04",
+  "datato": "2021-08-05",
+  "hotel": {
+    "name": "HotelTime Hotel",
+    "id": "1.1100000001"
+  },
+  "bookings": [
+    {
+      "id": "1.1200208894",
+      "created": "2021-08-01T03:51:36.4757887+02:00",
+      "currency": "CZK",
+      "totalPrice": 0.0,
+      "totalPaid": 0.0,
+      "chmPrePaymentRaw": null,
+      "originid": null,
+      "segment": "",
+      "clienttype": "",
+      "source": "",
+      "provider": "",
+      "kioskapikey": null,
+      "accountcentres": null,
+      "owner": null,
+      "isblock": false,
+      "modifyon": "2021-08-04T11:19:20.493",
+      "nationalityIso3": "CZE",
+      "rooms": [
+        {
+          "avgnightprice": 500.0,
+          "state": "Canceled",
+          "ratecode": "JP",
+          "ages": [
+            {
+              "idage": 0,
+              "amount": 1
+            }
+          ],
+          "idstay": 1200208899,
+          "arrival": "2021-08-03",
+          "departure": "2021-08-04",
+          "roomtype": "KING",
+          "roomcode": "K6048",
+          "pax": 1,
+          "restype": "Room",
+          "created": "2021-08-01T03:51:36.4757887+02:00"
+        },
+        {
+          "avgnightprice": 800.0,
+          "state": "Canceled",
+          "ratecode": "JP",
+          "ages": [
+            {
+              "idage": 0,
+              "amount": 1
+            },
+            {
+              "idage": 1,
+              "amount": 1
+            }
+          ],
+          "idstay": 1200208895,
+          "arrival": "2021-08-03",
+          "departure": "2021-08-04",
+          "roomtype": "KING",
+          "roomcode": "K6047",
+          "pax": 2,
+          "restype": "Room",
+          "created": "2021-08-01T03:51:36.4757887+02:00"
+        }
+      ]
+    }
+  ]
+}

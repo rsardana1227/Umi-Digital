@@ -1,0 +1,82 @@
+{
+    "ChangeDateTime": "2021-02-25T10:12:45.8515527Z",
+    "Booking": {
+        "Id": "XXXXXX",
+        "ProviderId": "XXXXXX",
+        "Reference": "XXXXXX",
+        "RestaurantName": "XXXX",
+        "MicrositeName": "XXXX",
+        "VisitDate": "2021-06-09T00:00:00",
+        "VisitTime": "19:30:00",
+        "PartySize": 2,
+        "ChannelCode": "INTERNAL",
+        "SpecialRequests": "residents ",
+        "IpAddress": "212.241.186.194",
+        "IsLeaveTimeConfirmed": false,
+        "Customer": {
+            "Id": 96872846,
+            "Title": "XXXX",
+            "FirstName": "XXXX",
+            "Surname": "XXXXXXX",
+            "Mobile": "XXXXXX",
+            "Phone": "",
+            "Company": "",
+            "Email": "XXXXXX",
+            "ReceiveGroupEmailMarketing": false,
+            "GroupEmailOptInDateTime": null,
+            "GroupEmailOptInText": "",
+            "ReceiveGroupSmsMarketing": false,
+            "GroupSmsOptInDateTime": null,
+            "GroupSmsOptInText": "",
+            "ReceiveRestaurantEmailMarketing": true,
+            "RestaurantEmailOptInDateTime": "2020-03-05T08:21:00",
+            "RestaurantEmailOptInText": null,
+            "ReceiveRestaurantSmsMarketing": false,
+            "RestaurantSmsOptInDateTime": null,
+            "RestaurantSmsOptInText": null,
+            "MembershipId": "",
+            "CustomField": null,
+            "IsFavourite": false,
+            "Birthday": null,
+            "Anniversary": null,
+            "CustomerType": null,
+            "CustomerCodes": [],
+            "IsVip": false,
+            "OperaId": 0,
+            "CustomerComments": "",
+            "CustomerIpAddress": null,
+            "IsBlocked": false
+        },
+        "BookingReasonIds": [],
+        "BookingStatus": "Confirmed",
+        "BookingDateTime": "2021-02-25T10:12:45.7890495",
+        "Promotions": [],
+        "ArrivalStatus": "NotArrived",
+        "MealStatus": "Free",
+        "FunctionSheetUrl": null,
+        "PreOrderUrl": null,
+        "TableIds": [
+            1811636
+        ],
+        "TableNumbers": "20",
+        "PhantomTableIds": [],
+        "PhantomTableNumbers": "",
+        "AreaIdList": [
+            138431
+        ],
+        "BookingExtras": [],
+        "Payments": [],
+        "BookingCodes": [],
+        "RoomNumber": "",
+        "CustomerSpend": 0,
+        "BookingDuration": 180,
+        "CancellationReason": null
+    },
+    "Changes": [
+        {
+            "ChangeType": "BookingCreated",
+            "OldValue": null,
+            "NewValue": "XXXXXX"
+        }
+    ]
+}
